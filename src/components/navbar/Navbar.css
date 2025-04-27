@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    /* increased padding */
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 60px;
+    /* bigger logo */
+}
+
+.reseller-text {
+    font-size: 16px;
+    /* slightly bigger text */
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar-center {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* more space between links */
+}
+
+.navbar-center a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    /* bigger menu items */
+}
+
+.navbar-center a svg {
+    font-size: 22px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    /* bigger text under icons */
+    color: #000;
+}
+
+.icon-text svg {
+    font-size: 26px;
+    /* bigger icons */
+}

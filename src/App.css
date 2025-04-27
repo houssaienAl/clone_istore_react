@@ -1,0 +1,45 @@
+.App {
+  width: 100%;
+}
+
+.second-section {
+  display: flex;
+  flex-wrap: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.full-width-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h2 {
+  font-size: 2.3rem;
+  text-align: center;
+  margin: 20px 0;
+  color: rgb(14, 14, 108);
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  padding: 20px;
+}
+
+.container {
+
+
+  justify-content: center;
+  gap: 20px;
+}

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <script defer="" src="./React App_files/bundle.js.download"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            width: 100%;
+            margin: 0 !important;
+        }
+
+        code {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+                monospace;
+        }
+
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1QsVUFBVTtBQUNaOztBQUVBO0VBQ0U7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0VBQ2xDLFdBQVc7RUFDWCxvQkFBb0I7QUFDdEI7O0FBRUE7RUFDRTthQUNXO0FBQ2IiLCJzb3VyY2VzQ29udGVudCI6WyIqIHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwO1xufVxuXG5ib2R5IHtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbiAgd2lkdGg6IDEwMCU7XG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xufVxuXG5jb2RlIHtcbiAgZm9udC1mYW1pbHk6IHNvdXJjZS1jb2RlLXBybywgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsICdDb3VyaWVyIE5ldycsXG4gICAgbW9ub3NwYWNlO1xufSJdLCJzb3VyY2VSb290IjoiIn0= */
+    </style>
+    <style>
+        .App {
+            width: 100%;
+        }
+
+        .second-section {
+            display: flex;
+            flex-wrap: column;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+
+            max-width: 1500px;
+            /* <<< Limit how wide it can go */
+            margin: 0 auto;
+            /* <<< Center it horizontally */
+        }
+
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsV0FBVztBQUNiOztBQUVBO0VBQ0UsYUFBYTtFQUNiLGlCQUFpQjtFQUNqQix1QkFBdUI7RUFDdkIsU0FBUztFQUNULGFBQWE7O0VBRWIsaUJBQWlCO0VBQ2pCLGlDQUFpQztFQUNqQyxjQUFjO0VBQ2QsK0JBQStCO0FBQ2pDIiwic291cmNlc0NvbnRlbnQiOlsiLkFwcCB7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4uc2Vjb25kLXNlY3Rpb24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LXdyYXA6IGNvbHVtbjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGdhcDogMjBweDtcbiAgcGFkZGluZzogMTBweDtcblxuICBtYXgtd2lkdGg6IDE1MDBweDtcbiAgLyogPDw8IExpbWl0IGhvdyB3aWRlIGl0IGNhbiBnbyAqL1xuICBtYXJnaW46IDAgYXV0bztcbiAgLyogPDw8IENlbnRlciBpdCBob3Jpem9udGFsbHkgKi9cbn0iXSwic291cmNlUm9vdCI6IiJ9 */
+    </style>
+    <style>
+        .embla {
+            width: 100%;
+            margin: auto;
+            --slide-spacing: 0rem;
+            --slide-size: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 1rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .embla__viewport {
+            overflow: hidden;
+            width: 90%;
+        }
+
+        .embla__container {
+            display: flex;
+            touch-action: pan-y pinch-zoom;
+        }
+
+        .embla__slide {
+            transform: translate3d(0, 0, 0);
+            flex: 0 0 var(--slide-size);
+            width: 100%;
+        }
+
+        .embla__slide__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .embla__controls {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            justify-content: space-between;
+            gap: 1.2rem;
+            margin-top: 1.8rem;
+        }
+
+        .embla__buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.6rem;
+            align-items: center;
+        }
+
+        .embla__button {
+            -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+            appearance: none;
+            background-color: transparent;
+            touch-action: manipulation;
+            display: inline-flex;
+            text-decoration: none;
+            cursor: pointer;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+            width: 3.6rem;
+            height: 3.6rem;
+            z-index: 1;
+            border-radius: 50%;
+            color: var(--text-body);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .embla__button:disabled {
+            color: var(--detail-high-contrast);
+        }
+
+        .embla__button__svg {
+            width: 35%;
+            height: 35%;
+        }
+
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL2Nhcm91c2VsL3N0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1oscUJBQXFCO0lBQ3JCLGtCQUFrQjtJQUNsQixhQUFhO0lBQ2IsaUJBQWlCO0lBQ2pCLFNBQVM7SUFDVCxtQkFBbUI7SUFDbkIsOEJBQThCO0FBQ2xDOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLFVBQVU7QUFDZDs7QUFFQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7QUFDbEM7O0FBRUE7SUFDSSwrQkFBK0I7SUFDL0IsMkJBQTJCO0lBQzNCLFdBQVc7QUFDZjs7QUFFQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLCtCQUErQjtJQUMvQiw4QkFBOEI7SUFDOUIsV0FBVztJQUNYLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLGFBQWE7SUFDYixxQ0FBcUM7SUFDckMsV0FBVztJQUNYLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLDJFQUEyRTtJQUUzRSxnQkFBZ0I7SUFDaEIsNkJBQTZCO0lBQzdCLDBCQUEwQjtJQUMxQixvQkFBb0I7SUFDcEIscUJBQXFCO0lBQ3JCLGVBQWU7SUFDZixTQUFTO0lBQ1QsVUFBVTtJQUNWLFNBQVM7SUFDVCw0REFBNEQ7SUFDNUQsYUFBYTtJQUNiLGNBQWM7SUFDZCxVQUFVO0lBQ1Ysa0JBQWtCO0lBQ2xCLHVCQUF1QjtJQUN2QixhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1QjtBQUMzQjs7QUFFQTtJQUNJLGtDQUFrQztBQUN0Qzs7QUFFQTtJQUNJLFVBQVU7SUFDVixXQUFXO0FBQ2YiLCJzb3VyY2VzQ29udGVudCI6WyIuZW1ibGEge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBtYXJnaW46IGF1dG87XHJcbiAgICAtLXNsaWRlLXNwYWNpbmc6IDByZW07XHJcbiAgICAtLXNsaWRlLXNpemU6IDEwMCU7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC13cmFwOiBub3dyYXA7XHJcbiAgICBnYXA6IDFyZW07XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG59XHJcblxyXG4uZW1ibGFfX3ZpZXdwb3J0IHtcclxuICAgIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgICB3aWR0aDogOTAlO1xyXG59XHJcblxyXG4uZW1ibGFfX2NvbnRhaW5lciB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgdG91Y2gtYWN0aW9uOiBwYW4teSBwaW5jaC16b29tO1xyXG59XHJcblxyXG4uZW1ibGFfX3NsaWRlIHtcclxuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMCwgMCwgMCk7XHJcbiAgICBmbGV4OiAwIDAgdmFyKC0tc2xpZGUtc2l6ZSk7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLmVtYmxhX19zbGlkZV9faW1nIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgb2JqZWN0LWZpdDogY292ZXI7XHJcbn1cclxuXHJcbi5lbWJsYV9fY29udHJvbHMge1xyXG4gICAgZGlzcGxheTogZ3JpZDtcclxuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogYXV0byAxZnI7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgICBnYXA6IDEuMnJlbTtcclxuICAgIG1hcmdpbi10b3A6IDEuOHJlbTtcclxufVxyXG5cclxuLmVtYmxhX19idXR0b25zIHtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCgyLCAxZnIpO1xyXG4gICAgZ2FwOiAwLjZyZW07XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG59XHJcblxyXG4uZW1ibGFfX2J1dHRvbiB7XHJcbiAgICAtd2Via2l0LXRhcC1oaWdobGlnaHQtY29sb3I6IHJnYmEodmFyKC0tdGV4dC1oaWdoLWNvbnRyYXN0LXJnYi12YWx1ZSksIDAuNSk7XHJcbiAgICAtd2Via2l0LWFwcGVhcmFuY2U6IG5vbmU7XHJcbiAgICBhcHBlYXJhbmNlOiBub25lO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XHJcbiAgICB0b3VjaC1hY3Rpb246IG1hbmlwdWxhdGlvbjtcclxuICAgIGRpc3BsYXk6IGlubGluZS1mbGV4O1xyXG4gICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgYm9yZGVyOiAwO1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIG1hcmdpbjogMDtcclxuICAgIGJveC1zaGFkb3c6IGluc2V0IDAgMCAwIDAuMnJlbSB2YXIoLS1kZXRhaWwtbWVkaXVtLWNvbnRyYXN0KTtcclxuICAgIHdpZHRoOiAzLjZyZW07XHJcbiAgICBoZWlnaHQ6IDMuNnJlbTtcclxuICAgIHotaW5kZXg6IDE7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgICBjb2xvcjogdmFyKC0tdGV4dC1ib2R5KTtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbn1cclxuXHJcbi5lbWJsYV9fYnV0dG9uOmRpc2FibGVkIHtcclxuICAgIGNvbG9yOiB2YXIoLS1kZXRhaWwtaGlnaC1jb250cmFzdCk7XHJcbn1cclxuXHJcbi5lbWJsYV9fYnV0dG9uX19zdmcge1xyXG4gICAgd2lkdGg6IDM1JTtcclxuICAgIGhlaWdodDogMzUlO1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */
+    </style>
+    <style>
+        .left-img-section {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .left-img__container {
+            transition: transform 500ms ease-in-out;
+
+        }
+
+        .left-img__container:hover {
+            transform: scale(1.05);
+        }
+
+        .left-img__container img {
+            width: 600px;
+            height: 400px;
+        }
+
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL2xlZnQtaW1nL3N0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFVBQVU7SUFDVixhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLFNBQVM7QUFDYjs7QUFFQTtJQUNJLHVDQUF1Qzs7QUFFM0M7O0FBRUE7SUFDSSxzQkFBc0I7QUFDMUI7O0FBRUE7SUFDSSxZQUFZO0lBQ1osYUFBYTtBQUNqQiIsInNvdXJjZXNDb250ZW50IjpbIi5sZWZ0LWltZy1zZWN0aW9uIHtcclxuICAgIHdpZHRoOiAzMyU7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGdhcDogMXJlbTtcclxufVxyXG5cclxuLmxlZnQtaW1nX19jb250YWluZXIge1xyXG4gICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDUwMG1zIGVhc2UtaW4tb3V0O1xyXG5cclxufVxyXG5cclxuLmxlZnQtaW1nX19jb250YWluZXI6aG92ZXIge1xyXG4gICAgdHJhbnNmb3JtOiBzY2FsZSgxLjA1KTtcclxufVxyXG5cclxuLmxlZnQtaW1nX19jb250YWluZXIgaW1nIHtcclxuICAgIHdpZHRoOiA2MDBweDtcclxuICAgIGhlaWdodDogNDAwcHg7XHJcbn0iXSwic291cmNlUm9vdCI6IiJ9 */
+    </style>
+    <style>
+        .right-img-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .right-img__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 500ms ease-in-out;
+        }
+
+        .image-wrapper {
+            position: relative;
+            width: 236px;
+            height: 250px;
+        }
+
+        .right-img__container img {
+            width: 236px;
+            height: 250px;
+            transition: transform 500ms ease-in-out, opacity 0.3s ease;
+            object-fit: cover;
+        }
+
+        .default-img,
+        .hover-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hover-img {
+            opacity: 0;
+        }
+
+        .image-wrapper:hover .hover-img {
+            opacity: 1;
+        }
+
+        .image-wrapper:hover .default-img {
+            opacity: 0;
+        }
+
+        .right-img__container:hover img {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .right-img__container img {
+                flex-grow: 0;
+                flex-shrink: 0;
+                flex-basis: calc(50% - 40px);
+            }
+        }
+
+        .right-img__container a {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666666;
+            text-align: center;
+            line-height: 1.4;
+            max-width: 236px;
+            word-break: break-word;
+            text-decoration: none;
+            display: block;
+        }
+
+        .right-img__container p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: rgb(185, 6, 6);
+            text-align: center;
+            line-height: 1.4;
+            max-width: 236px;
+            word-break: break-word;
+        }
+
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL3JpZ2h0LXNlY3Rpb24vc3R5bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtJQUNiLGVBQWU7SUFDZix1QkFBdUI7SUFDdkIsU0FBUztJQUNULGFBQWE7SUFDYixpQkFBaUI7SUFDakIsY0FBYztBQUNsQjs7QUFFQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsbUJBQW1CO0lBQ25CLHVDQUF1QztBQUMzQzs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osYUFBYTtBQUNqQjs7QUFFQTtJQUNJLFlBQVk7SUFDWixhQUFhO0lBQ2IsMERBQTBEO0lBQzFELGlCQUFpQjtBQUNyQjs7QUFFQTs7SUFFSSxrQkFBa0I7SUFDbEIsTUFBTTtJQUNOLE9BQU87SUFDUCxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLFVBQVU7QUFDZDs7QUFFQTtJQUNJLFVBQVU7QUFDZDs7QUFFQTtJQUNJLFVBQVU7QUFDZDs7QUFFQTtJQUNJLHNCQUFzQjtBQUMxQjs7QUFFQTtJQUNJO1FBQ0ksWUFBMEI7UUFBMUIsY0FBMEI7UUFBMUIsNEJBQTBCO0lBQzlCO0FBQ0o7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLGNBQWM7SUFDZCxrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixzQkFBc0I7SUFDdEIscUJBQXFCO0lBQ3JCLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxlQUFlO0lBQ2YsZUFBZTtJQUNmLHFCQUFxQjtJQUNyQixrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixzQkFBc0I7QUFDMUIiLCJzb3VyY2VzQ29udGVudCI6WyIucmlnaHQtaW1nLXNlY3Rpb24ge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtd3JhcDogd3JhcDtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgZ2FwOiAyMHB4O1xyXG4gICAgcGFkZGluZzogMjBweDtcclxuICAgIG1heC13aWR0aDogMTIwMHB4O1xyXG4gICAgbWFyZ2luOiAwIGF1dG87XHJcbn1cclxuXHJcbi5yaWdodC1pbWdfX2NvbnRhaW5lciB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gNTAwbXMgZWFzZS1pbi1vdXQ7XHJcbn1cclxuXHJcbi5pbWFnZS13cmFwcGVyIHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIHdpZHRoOiAyMzZweDtcclxuICAgIGhlaWdodDogMjUwcHg7XHJcbn1cclxuXHJcbi5yaWdodC1pbWdfX2NvbnRhaW5lciBpbWcge1xyXG4gICAgd2lkdGg6IDIzNnB4O1xyXG4gICAgaGVpZ2h0OiAyNTBweDtcclxuICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSA1MDBtcyBlYXNlLWluLW91dCwgb3BhY2l0eSAwLjNzIGVhc2U7XHJcbiAgICBvYmplY3QtZml0OiBjb3ZlcjtcclxufVxyXG5cclxuLmRlZmF1bHQtaW1nLFxyXG4uaG92ZXItaW1nIHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogMDtcclxuICAgIGxlZnQ6IDA7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogMTAwJTtcclxufVxyXG5cclxuLmhvdmVyLWltZyB7XHJcbiAgICBvcGFjaXR5OiAwO1xyXG59XHJcblxyXG4uaW1hZ2Utd3JhcHBlcjpob3ZlciAuaG92ZXItaW1nIHtcclxuICAgIG9wYWNpdHk6IDE7XHJcbn1cclxuXHJcbi5pbWFnZS13cmFwcGVyOmhvdmVyIC5kZWZhdWx0LWltZyB7XHJcbiAgICBvcGFjaXR5OiAwO1xyXG59XHJcblxyXG4ucmlnaHQtaW1nX19jb250YWluZXI6aG92ZXIgaW1nIHtcclxuICAgIHRyYW5zZm9ybTogc2NhbGUoMS4wNSk7XHJcbn1cclxuXHJcbkBtZWRpYSAobWF4LXdpZHRoOiA3NjhweCkge1xyXG4gICAgLnJpZ2h0LWltZ19fY29udGFpbmVyIGltZyB7XHJcbiAgICAgICAgZmxleDogMCAwIGNhbGMoNTAlIC0gNDBweCk7XHJcbiAgICB9XHJcbn1cclxuXHJcbi5yaWdodC1pbWdfX2NvbnRhaW5lciBhIHtcclxuICAgIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgICBmb250LXNpemU6IDE0cHg7XHJcbiAgICBjb2xvcjogIzY2NjY2NjtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGxpbmUtaGVpZ2h0OiAxLjQ7XHJcbiAgICBtYXgtd2lkdGg6IDIzNnB4O1xyXG4gICAgd29yZC1icmVhazogYnJlYWstd29yZDtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG59XHJcblxyXG4ucmlnaHQtaW1nX19jb250YWluZXIgcCB7XHJcbiAgICBtYXJnaW4tdG9wOiA1cHg7XHJcbiAgICBmb250LXNpemU6IDE0cHg7XHJcbiAgICBjb2xvcjogcmdiKDE4NSwgNiwgNik7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBsaW5lLWhlaWdodDogMS40O1xyXG4gICAgbWF4LXdpZHRoOiAyMzZweDtcclxuICAgIHdvcmQtYnJlYWs6IGJyZWFrLXdvcmQ7XHJcbn0iXSwic291cmNlUm9vdCI6IiJ9 */
+    </style>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div class="App">
+            <section class="embla"><button class="embla__button embla__button--prev" type="button"><svg
+                        class="embla__button__svg" viewBox="0 0 532 532">
+                        <path fill="currentColor"
+                            d="M355.66 11.354c13.793-13.805 36.208-13.805 50.001 0 13.785 13.804 13.785 36.238 0 50.034L201.22 266l204.442 204.61c13.785 13.805 13.785 36.239 0 50.044-13.793 13.796-36.208 13.796-50.002 0a5994246.277 5994246.277 0 0 0-229.332-229.454 35.065 35.065 0 0 1-10.326-25.126c0-9.2 3.393-18.26 10.326-25.2C172.192 194.973 332.731 34.31 355.66 11.354Z">
+                        </path>
+                    </svg></button>
+                <div class="embla__viewport">
+                    <div class="embla__container" style="transform: translate3d(0px, 0px, 0px);">
+                        <div class="embla__slide" style="transform: translate3d(0px, 0px, 0px);"><img
+                                class="embla__slide__img" alt="0" src="./React App_files/iphone16PROblk2.jpg"></div>
+                        <div class="embla__slide"><img class="embla__slide__img" alt="1"
+                                src="./React App_files/couverture-iphone16.jpg"></div>
+                        <div class="embla__slide"><img class="embla__slide__img" alt="2"
+                                src="./React App_files/ipadairSLIDE.png"></div>
+                    </div>
+                </div><button class="embla__button embla__button--next" type="button"><svg class="embla__button__svg"
+                        viewBox="0 0 532 532">
+                        <path fill="currentColor"
+                            d="M176.34 520.646c-13.793 13.805-36.208 13.805-50.001 0-13.785-13.804-13.785-36.238 0-50.034L330.78 266 126.34 61.391c-13.785-13.805-13.785-36.239 0-50.044 13.793-13.796 36.208-13.796 50.002 0 22.928 22.947 206.395 206.507 229.332 229.454a35.065 35.065 0 0 1 10.326 25.126c0 9.2-3.393 18.26-10.326 25.2-45.865 45.901-206.404 206.564-229.332 229.52Z">
+                        </path>
+                    </svg></button>
+            </section>
+            <hr>
+            <div class="second-section">
+                <div class="left-img-section">
+                    <div class="left-img__container"><img alt="" src="./React App_files/MBPM3.jpg"></div>
+                    <div class="left-img__container"><img alt="" src="./React App_files/MA15.jpg"></div>
+                </div>
+                <div class="right-img-section">
+                    <div class="right-img__container">
+                        <div class="image-wrapper"><img class="default-img" alt=""
+                                src="./React App_files/macbook-air-13-apple-m2-8coeurs-cpu-8-coeurs-gpu-8gb-ssd-256go-midnight.jpg"><img
+                                class="hover-img" alt=""
+                                src="./React App_files/macbook-air-13-apple-m2-8coeurs-cpu-8-coeurs-gpu-8gb-ssd-256go-midnight(1).jpg">
+                        </div><a>MacBook Air 13" Apple M2 8coeurs CPU 8 Coeurs GPU - 8Gb SSD 256Go - Midnight</a>
+                        <p>4 699,000TND</p>
+                    </div>
+                    <div class="right-img__container">
+                        <div class="image-wrapper"><img class="default-img" alt=""
+                                src="./React App_files/macbook-air-13-apple-m2-cpu-8c-gpu-8c-ssd-256go-starlight.jpg"><img
+                                class="hover-img" alt=""
+                                src="./React App_files/macbook-air-13-apple-m2-cpu-8c-gpu-8c-ssd-256go-starlight(1).jpg">
+                        </div> <a>MacBook Air 13" Apple M2 CPU 8C GPU 8C SSD 256Go - Starlight</a>
+                        <p>4 699,000TND</p>
+                    </div>
+                    <div class="right-img__container">
+                        <div class="image-wrapper"><img class="default-img" alt=""
+                                src="./React App_files/macbook-air-13-apple-m3-cpu-8c-gpu-8c-16gb-ssd-256go-midnight.jpg"><img
+                                class="hover-img" alt=""
+                                src="./React App_files/macbook-air-13-apple-m3-cpu-8c-gpu-8c-16gb-ssd-256go-midnight(1).jpg">
+                        </div> <a>MacBook Air 13" Apple M3 CPU 8C GPU 8C 16GB SSD 256Go - Midnight</a>
+                        <p>4 699,000TND</p>
+                    </div>
+                    <div class="right-img__container">
+                        <div class="image-wrapper"><img class="default-img" alt=""
+                                src="./React App_files/macbook-air-13-apple-m3-cpu-8c-gpu-10c-24gb-ssd-512go-space-grey.jpg"><img
+                                class="hover-img" alt=""
+                                src="./React App_files/macbook-air-13-apple-m3-cpu-8c-gpu-10c-24gb-ssd-512go-space-grey(1).jpg">
+                        </div> <a>MacBook Air 13" Apple M3 CPU 8C GPU 10C 24GB SSD 512Go - Space Grey</a>
+                        <p>4 699,000TND</p>
+                    </div>
+                    <div class="right-img__container">
+                        <div class="image-wrapper"><img class="default-img" alt=""
+                                src="./React App_files/macbook-air-13-apple-m1-cpu-8ceours-gpu-7coeurs-ssd-256go-space-grey.jpg"><img
+                                class="hover-img" alt=""
+                                src="./React App_files/macbook-air-13-apple-m1-cpu-8ceours-gpu-7coeurs-ssd-256go-space-grey(1).jpg">
+                        </div> <a>MacBook Air 13" Apple M1 CPU 8ceours GPU 7coeurs - SSD 256Go - Space Grey</a>
+                        <p>3 699,000TND</p>
+                    </div>
+                    <div class="right-img__container">
+                        <div class="image-wrapper"><img class="default-img" alt=""
+                                src="./React App_files/macbook-air-13-apple-m2-8coeurs-cpu-8-coeurs-gpu-8gb-ssd-256go-midnight.jpg"><img
+                                class="hover-img" alt=""
+                                src="./React App_files/macbook-air-13-apple-m2-8coeurs-cpu-8-coeurs-gpu-8gb-ssd-256go-midnight(1).jpg">
+                        </div> <a>MacBook Pro 14" Puce Apple M3 CPU 8coeurs 10coeurs GPU SSD 512Go - Space Grey</a>
+                        <p>5 699,000TND</p>
+                    </div>
+                </div>
+            </div><img alt="" width="100%" height="1000px" src="./React App_files/MULTIL-min_3.jpg" style="
+    width: 1000px;
+">
+        </div>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+
+</body>
+
+</html>
